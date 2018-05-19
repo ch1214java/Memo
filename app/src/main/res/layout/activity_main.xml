@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.memo.MainActivity">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/progressbar"
+        android:layout_toEndOf="@+id/progressbar"
+        android:layout_above="@+id/linearLayout1">
+
+    </ListView>
+    <Button
+        android:id="@+id/btadd"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="+"
+        android:background="@drawable/btonys"
+        android:layout_alignRight="@+id/listview"
+        android:textSize="40dp"
+        android:layout_margin="22dp"
+        android:layout_alignParentTop="true" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btfirst"
+            android:layout_width="63dp"
+            android:layout_height="36dp"
+            android:text="首页"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <ImageButton
+            android:id="@+id/imagebtpre"
+            android:layout_width="59dp"
+            android:layout_height="27dp"
+            android:background="#fff"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/pre"/>
+        <ImageButton
+            android:id="@+id/imagebtnext"
+            android:layout_width="52dp"
+            android:layout_height="29dp"
+            android:background="#fff"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/next"/>
+
+        <Button
+            android:id="@+id/btend"
+            android:layout_width="63dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="末页" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:max="100"
+        android:progress="50"
+        android:secondaryProgress="70"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
